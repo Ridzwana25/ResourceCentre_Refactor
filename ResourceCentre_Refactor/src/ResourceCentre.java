@@ -307,10 +307,9 @@ public class ResourceCentre {
 			if (tag.equalsIgnoreCase(assetTag)
 					&& camcorderList.get(i).getIsAvailable() == false) {
 
-			if (tag.equalsIgnoreCase(assetTag) && camcorderList.get(i).getIsAvailable() == false) {
-
 				camcorderList.get(i).setIsAvailable(true);
 				camcorderList.get(i).setDueDate("");
+			}
 				isReturned = true;
 
 			}
@@ -318,9 +317,7 @@ public class ResourceCentre {
 		return isReturned;
 		
 			}
-		}
-	}
-
+		
 	public static void returnCamcorder(ArrayList<Camcorder> camcorderList) {
 		ResourceCentre.viewAllCamcorder(camcorderList);
 		String tag = Helper.readString("Enter asset tag > ");
