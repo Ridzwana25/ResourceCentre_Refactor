@@ -11,7 +11,7 @@ public class Item {
 		this.dueDate = "";
 		this.isAvailable = true;
 	}
-	public String toString() {
+	public String toString() { //covert to string
 		
 		// Write your codes here
 		return String.format("%-10s %-30s %-10s", getAssetTag(), getDescription(), showAvailability(getIsAvailable(), getDueDate()));

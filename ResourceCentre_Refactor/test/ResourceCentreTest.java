@@ -194,7 +194,7 @@ public class ResourceCentreTest {
 		assertFalse("Check that non-existing chromebook CB0013  is returned - false?", isReturned);
 	}
 	@After
-	public void tearDown() throws Exception {
+	public void tearDown() throws Exception { //void tearDown
 		cc1 = null;
 		cc2 = null;
 		cb1 = null;
