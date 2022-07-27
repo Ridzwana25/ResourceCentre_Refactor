@@ -144,6 +144,7 @@ public class ResourceCentre {
 		return output;
 	}
 
+
 	public static void viewAllCamcorder(ArrayList<Camcorder> camcorderList) {
 		ResourceCentre.setHeader("CAMCORDER LIST");
 		String output = String.format("%-10s %-30s %-10s %-10s %-20s\n", "ASSET TAG", "DESCRIPTION", "AVAILABLE",
@@ -170,8 +171,7 @@ public class ResourceCentre {
 		System.out.println(output);
 	}
 
-	// ================================= Option 2 Add (CRUD -
-	// Create)=================================
+	// ================================= Option 2 Add (CRUD -// Create)=================================
 	public static Camcorder inputCamcorder() {
 		String tag = Helper.readString("Enter asset tag > ");
 		String description = Helper.readString("Enter description > ");
@@ -204,8 +204,7 @@ public class ResourceCentre {
 
 	}
 
-	// ================================= Option 3 Loan (CURD- Update)
-	// =================================
+	// ================================= Option 3 Loan (CURD- Update) // =================================
 	public static boolean doLoanCamcorder(ArrayList<Camcorder> camcorderList, String tag, String dueDate) {
 
 		boolean isLoaned = false;
