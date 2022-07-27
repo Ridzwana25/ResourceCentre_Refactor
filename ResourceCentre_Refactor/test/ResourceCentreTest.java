@@ -12,15 +12,15 @@ public class ResourceCentreTest {
 	private Chromebook cb1;
 	private Chromebook cb2;
 	
-	private ArrayList<Camcorder> camcorderList;
-	private ArrayList<Chromebook> chromebookList;
+	private ArrayList<Camcorder> camcorderList; //camcorderList arrayList
+	private ArrayList<Chromebook> chromebookList; //ChromeBook arrayList
 	
 	public ResourceCentreTest() {
 		super();
 	}
 	
 	@Before
-	public void setUp() throws Exception {
+	public void setUp() throws Exception { //set up 
 		// prepare test data
 		cc1 = new Camcorder("CC0011", "Nikon HDSLR", 40);
 		cc2 = new Camcorder("CC0012", "Sony DSC-RX100M7", 20);
