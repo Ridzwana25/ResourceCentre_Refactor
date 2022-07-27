@@ -9,7 +9,7 @@ public class Item {
 		this.assetTag = assetTag;
 		this.description = description;
 		this.dueDate = "";
-		this.isAvailable = true;
+		this.isAvailable = true;//hi
 	}
 	public String toString() { //covert to string
 		
